@@ -1,7 +1,7 @@
 {
-    "name": "Azerion.BuildPipeline.Editor",
-    "includePlatforms": [
-        "Editor"
-    ],
-    "excludePlatforms": []
+  "name": "Azerion.BuildPipeline.Editor",
+  "includePlatforms": [
+    "Editor"
+  ],
+  "excludePlatforms": []
 }
