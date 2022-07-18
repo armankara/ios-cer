@@ -37,5 +37,5 @@ jobs:
 workflows:
   build_ios_and_upload_testflight:
     jobs:
-#      - generate_ios_project
+      - generate_ios_project
       - test_flight
