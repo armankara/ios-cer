@@ -15,6 +15,7 @@ public class IOSBuilder : MonoBehaviour
     private static void Build()
     {
         // Place all your scenes here
+		//Build Ios
         string[] scenes = new string[EditorBuildSettings.scenes.Length];
 
         for (int i = 0; i < EditorBuildSettings.scenes.Length; i++)

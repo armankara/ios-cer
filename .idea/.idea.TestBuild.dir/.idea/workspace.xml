@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ea2290f9-f79b-4c18-be3e-40b19d4a8ad8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/fastlane/Appfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fastlane/Fastfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fastlane/Matchfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fastlane/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fastlane/report.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fastlane/test_output/report.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fastlane/test_output/report.junit" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.circleci/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.circleci/config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TestBuild.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TestBuild.dir/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="ea2290f9-f79b-4c18-be3e-40b19d4a8ad8" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,7 +34,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/build-pipeline-package/Editor/AndroidBuilder.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/build-pipeline-package/Editor/IOSBuilder.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/build-pipeline-package/Editor/IOSBuilder.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/build-pipeline-package/Editor/WebGLBuilder.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -75,7 +65,7 @@
       <option name="presentableId" value="Default" />
       <updated>1657197912443</updated>
       <workItem from="1657197916891" duration="15820000" />
-      <workItem from="1658065162077" duration="15976000" />
+      <workItem from="1658065162077" duration="16110000" />
     </task>
     <servers />
   </component>
