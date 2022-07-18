@@ -22,14 +22,14 @@ workflows:
       - save_cache:
           key: ios-build-workspace
           paths:
-            -/project/path/src/Builds/ios
+            -/Users/arman/Desktop/TestBuild/Builds/ios
       - test-flight:
           name: test-flight
           requires:
             - build-ios
           macos:
             xcode: "13.4.1"
-          working_directory: /project/path/src/Builds/ios
+          working_directory: /Users/arman/Desktop/TestBuild/Builds/ios
           steps:
             - restore_cache:
               keys: ios-build-workspace
