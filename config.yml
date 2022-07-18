@@ -1,0 +1,39 @@
+version: '2.1'
+orbs:
+  unity: game-ci/unity@0.2.0
+  ruby: circleci/ruby@1.2.0
+  
+workflows:
+  test-build-with-executors:
+    jobs:
+      - checkout
+      - build:
+          build-target: iOS
+          context: unity-orb
+          executor:
+            editor_version: 2019.4.19f1
+            name: unity/ubuntu
+            resource_class: large
+            target_platform: ios
+          name: build-ios
+          project-path: /project/path/src
+          step-name: Build iOS
+          unity-license-var-name: UNITY_ENCODED_LICENSE
+      - save_cache:
+          key: ios-build-workspace
+          paths:
+            -/project/path/src/Builds/ios
+      - test-flight:
+          name: test-flight
+          requires:
+            - build-ios
+          macos:
+            xcode: "13.4.1"
+          working_directory: /project/path/src/Builds/ios
+          steps:
+            - restore_cache:
+              keys: ios-build-workspace
+            - ruby/install-deps
+            - run:
+                name: fastlane
+                command: fastlane beta
