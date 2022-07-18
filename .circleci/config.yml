@@ -13,9 +13,9 @@ jobs:
     steps:
       - checkout
       - unity/prepare-env:
-          unity-username-var-name: UNITY_USERNAME
-          unity-password-var-name: UNITY_PASSWORD
-          unity-serial-var-name: UNITY_SERIAL
+#          unity-username-var-name: UNITY_USERNAME
+#          unity-password-var-name: UNITY_PASSWORD
+#          unity-serial-var-name: UNITY_SERIAL
           unity-license-var-name: UNITY_ENCODED_LICENSE
       - unity/build:
           build-target: iOS
@@ -37,5 +37,5 @@ jobs:
 workflows:
   build_ios_and_upload_testflight:
     jobs:
-      - generate_ios_project
+#      - generate_ios_project
       - test_flight
