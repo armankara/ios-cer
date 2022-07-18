@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ea2290f9-f79b-4c18-be3e-40b19d4a8ad8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.circleci/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.circleci/config.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TestBuild.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TestBuild.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/build-pipeline-package/Editor/IOSBuilder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/build-pipeline-package/Editor/IOSBuilder.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +73,7 @@
       <workItem from="1658065162077" duration="18796000" />
       <workItem from="1658139505429" duration="77000" />
       <workItem from="1658139635863" duration="203000" />
-      <workItem from="1658139849973" duration="3153000" />
+      <workItem from="1658139849973" duration="4295000" />
     </task>
     <servers />
   </component>

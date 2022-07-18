@@ -29,7 +29,6 @@ public class IOSBuilder : MonoBehaviour
         buildPlayerOptions.options = BuildOptions.None;
 
         buildPlayerOptions.locationPathName = "builds/ios";
-
         EditorUserBuildSettings.development = false;
         EditorUserBuildSettings.allowDebugging = false;
 
