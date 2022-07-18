@@ -28,12 +28,14 @@ jobs:
     steps:
       - restore_cache:
           keys: ios-build-workspace
-      - ruby/install:
-          version: 2.7.5
-      - ruby/install-deps
+#      - ruby/install:
+#          version: 2.7.5
+#      - ruby/install-deps
       - run:
           name: fastlane
-          command: bundle exec fastlane beta
+          command: |
+            sudo gem install fastlane
+            fastlane beta
 
 workflows:
   build_ios_and_upload_testflight:
