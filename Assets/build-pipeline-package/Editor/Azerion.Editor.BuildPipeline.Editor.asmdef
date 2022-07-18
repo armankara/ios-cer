@@ -1,0 +1,7 @@
+{
+    "name": "Azerion.BuildPipeline.Editor",
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": []
+}
