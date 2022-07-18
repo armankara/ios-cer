@@ -16,24 +16,24 @@ workflows:
             resource_class: large
             target_platform: ios
           name: build-ios
-          project-path: /project/path/src
+          project-path: ./
           step-name: Build iOS
           unity-license-var-name: UNITY_ENCODED_LICENSE
       - save_cache:
           key: ios-build-workspace
           paths:
-            -/Users/arman/Desktop/TestBuild/Builds/ios
+            - builds/ios
       - test-flight:
           name: test-flight
           requires:
             - build-ios
           macos:
             xcode: "13.4.1"
-          working_directory: /Users/arman/Desktop/TestBuild/Builds/ios
+          working_directory: ./
           steps:
             - restore_cache:
               keys: ios-build-workspace
             - ruby/install-deps
             - run:
                 name: fastlane
-                command: fastlane beta
+                command:  bundle exec fastlane beta
