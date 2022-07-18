@@ -4,9 +4,8 @@ orbs:
   ruby: circleci/ruby@1.2.0
 
 jobs:
-  -
-    build:
-      build-target: iOS
+  - build:
+    build-target: iOS
       context: unity-orb
       executor:
         editor_version: 2019.4.19f1
@@ -14,29 +13,26 @@ jobs:
         resource_class: large
         target_platform: ios
       name: build-ios
-      project-path: ./
-      step-name: "Build iOS"
-      unity-license-var-name: UNITY_ENCODED_LICENSE
-  -
-    save_cache:
+        project-path: ./
+        step-name: Build iOS
+        unity-license-var-name: UNITY_ENCODED_LICENSE
+  - save_cache:
       key: ios-build-workspace
       paths:
         - builds/ios
-  -
-    test-flight:
+  - test-flight:
+      name: test-flight
       macos:
         xcode: "13.4.1"
-      name: test-flight
-      steps:
-        -
-          keys: ios-build-workspace
-          restore_cache: ~
-        - ruby/install-deps
-        -
-          run:
-            command: "bundle exec fastlane beta"
-            name: fastlane
       working_directory: ./
+      steps:
+        - restore_cache:
+          keys: ios-build-workspace
+        - ruby/install-deps
+        - run:
+            name: fastlane
+            command: bundle exec fastlane beta
+
 workflows:
   build-ios:
     jobs:
