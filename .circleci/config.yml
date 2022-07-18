@@ -4,6 +4,7 @@ orbs:
   ruby: circleci/ruby@1.2.0
 
 workflows:
+  version: 2
   test-build-with-executors:
     jobs:
       - checkout
