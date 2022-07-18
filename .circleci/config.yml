@@ -8,7 +8,7 @@ jobs:
     executor:
       editor_version: 2019.4.19f1
       name: unity/ubuntu
-      resource_class: large
+      resource_class: small
       target_platform: ios
     steps:
       - checkout
@@ -25,21 +25,20 @@ jobs:
   test_flight:
     macos:
       xcode: "13.4.1"
+    resource_class: medium
     steps:
       - restore_cache:
           keys: ios-build-workspace
-#      - ruby/install:
-#          version: 2.7.5
-#      - ruby/install-deps
       - run:
-          name: fastlane
-          command: |
-            sudo gem install fastlane
-            fastlane beta
+          name: install fastlane
+          command: sudo gem install fastlane
+      - run:
+          name: run fastlane beta
+          command: fastlane beta
 
 workflows:
   build_ios_and_upload_testflight:
     jobs:
       - generate_ios_project
       - test_flight:
-          requires: [ generate_ios_project ]
+          requires: [generate_ios_project]
