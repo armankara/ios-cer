@@ -13,7 +13,7 @@ jobs:
         resource_class: large
         target_platform: ios
       name: build-ios
-      project-path: ./
+      project-path: "./"
       step-name: Build iOS
       unity-license-var-name: UNITY_ENCODED_LICENSE
   - save_cache:
@@ -24,7 +24,7 @@ jobs:
       name: test-flight
       macos:
         xcode: 13.4.1
-      working_directory: ./
+      working_directory: "./"
       steps:
         - restore_cache: null
           keys: ios-build-workspace
