@@ -24,7 +24,6 @@ public class IOSBuilder : MonoBehaviour
         }
 
         buildPlayerOptions.scenes = scenes;
-
         buildPlayerOptions.target = BuildTarget.iOS;
         buildPlayerOptions.options = BuildOptions.None;
 
