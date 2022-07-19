@@ -22,7 +22,6 @@ platform :ios do
 #    upload_to_testflight(changelog: "Add rocket emoji Test from Circle ci 1")
    
    PROJECT_APP_ID = "1635039016"
-   
    apple_userid = CredentialsManager::AppfileConfig.try_fetch_value(:apple_id)
     upload_to_testflight(
          username: apple_userid,
