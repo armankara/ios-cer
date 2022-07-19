@@ -19,6 +19,16 @@ platform :ios do
  lane :beta do
    sync_code_signing(type: "appstore")    # see code signing guide for more information
    build_app(project: "builds/ios/Unity-iPhone.xcodeproj")
-   upload_to_testflight(apple_id: "armankara19@gmail.com", changelog: "Add rocket emoji Test from Circle ci 1")
+#    upload_to_testflight(changelog: "Add rocket emoji Test from Circle ci 1")
+   
+   PROJECT_APP_ID = "1635039016"
+   
+   apple_userid = CredentialsManager::AppfileConfig.try_fetch_value(:apple_id)
+    upload_to_testflight(
+         username: apple_userid,
+         apple_id: PROJECT_APP_ID,
+         skip_submission: true,
+         skip_waiting_for_build_processing: true
+       )
  end
 end
