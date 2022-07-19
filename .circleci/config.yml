@@ -26,13 +26,13 @@ jobs:
     macos:
       xcode: "13.4.1"
     resource_class: medium
-    working_directory: /root/projects
+    working_directory: ./
     steps:
       - restore_cache:
           keys: ios-build-workspace
       - run:
           name: install fastlane
-          command: install fastlane
+          command: sudo gem install fastlane
       - run:
           name: run fastlane beta
           command: fastlane beta
