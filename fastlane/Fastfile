@@ -19,6 +19,6 @@ platform :ios do
  lane :beta do
    sync_code_signing(type: "appstore")    # see code signing guide for more information
    build_app(project: "builds/ios/Unity-iPhone.xcodeproj")
-   upload_to_testflight(changelog: "Add rocket emoji 11")
+   upload_to_testflight(apple_id: "armankara19@gmail.com", changelog: "Add rocket emoji Test from Circle ci 1")
  end
 end
