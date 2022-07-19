@@ -32,7 +32,7 @@ jobs:
           keys: ios-build-workspace
       - run:
           name: install fastlane
-          command: sudo gem install fastlane
+          command: install fastlane
       - run:
           name: run fastlane beta
           command: fastlane beta
