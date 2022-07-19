@@ -46,7 +46,6 @@ public class IOSBuilder : MonoBehaviour
             EditorApplication.Exit(1);
         }
     }
-
     public static void BuildIOS()
     {
         Build();
