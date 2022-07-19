@@ -26,8 +26,9 @@ jobs:
     macos:
       xcode: "13.4.1"
     resource_class: medium
-    working_directory: ./
+#    working_directory: ./root/projects
     steps:
+      - checkout
       - restore_cache:
           keys: ios-build-workspace
       - run:
