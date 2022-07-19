@@ -52,8 +52,7 @@ public class AndroidBuilder : MonoBehaviour
         EditorUserBuildSettings.development = false;
         EditorUserBuildSettings.allowDebugging = false;
        // PlayerSettings.Android.useCustomKeystore = true;
-        
-
+       
         //BuildReport report = BuildPipeline.BuildPlayer(buildPlayerOptions);
         BuildReport report = BuildPipeline.BuildPlayer(scenes, "builds/android", BuildTarget.Android, BuildOptions.None);
         BuildSummary summary = report.summary;
@@ -69,8 +68,6 @@ public class AndroidBuilder : MonoBehaviour
             Debug.Log("Build failed");
             EditorApplication.Exit(1);
         }
-
-        
     }
 
     public static void BuildAPK()
