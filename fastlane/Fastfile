@@ -29,7 +29,8 @@ platform :ios do
           type: "appstore",
           readonly: true
         )
-   build_app(export_method: "app-store", project: "builds/ios/Unity-iPhone.xcodeproj")
+   #build_app(export_method: "app-store", project: "builds/ios/Unity-iPhone.xcodeproj")
+   build_app(export_method: "app-store", project: "Builds/iOS/UnityBuild/Unity-iPhone.xcodeproj")
 #    upload_to_testflight(changelog: "Add rocket emoji Test from Circle ci 1")
 
 
