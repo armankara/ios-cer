@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ea2290f9-f79b-4c18-be3e-40b19d4a8ad8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/fastlane/AuthKey_LQ2NJW67MU.p8" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TestBuild.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TestBuild.dir/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fastlane/Fastfile" beforeDir="false" afterPath="$PROJECT_DIR$/fastlane/Fastfile" afterDir="false" />
     </list>

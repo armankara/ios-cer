@@ -20,7 +20,7 @@ platform :ios do
  app_store_connect_api_key(
      key_id: "LQ2NJW67MU",
      issuer_id: "bcc39850-b8b5-4d50-82b1-87a437af958f",
-     key_filepath: "./AuthKey_LQ2NJW67MU.p8",
+     key_filepath: "fastlane/AuthKey_LQ2NJW67MU.p8",
      duration: 1200, # optional (maximum 1200)
      in_house: false # optional but may be required if using match/sigh
    )
