@@ -29,8 +29,9 @@ platform :ios do
   match(type: "adhoc", readonly: true)
   
 enable_automatic_code_signing(
+  team_id:"G6J49CK9Y3", 
   path: "Builds/iOS/UnityBuild/Unity-iPhone.xcodeproj"
-)
+ )
 
    build_app(xcargs: "-UseModernBuildSystem=YES" ,export_method: "app-store", project: "Builds/iOS/UnityBuild/Unity-iPhone.xcodeproj")
 
