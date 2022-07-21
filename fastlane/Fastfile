@@ -24,19 +24,14 @@ platform :ios do
      duration: 1200, # optional (maximum 1200)
      in_house: false # optional but may be required if using match/sigh
    )
-  # sync_code_signing(type: "appstore")    # see code signing guide for more information
   match(
           type: "appstore",
           readonly: true
         )
-   #build_app(export_method: "app-store", project: "builds/ios/Unity-iPhone.xcodeproj")
+
    build_app(xcargs: "-UseModernBuildSystem=YES" ,export_method: "app-store", project: "Builds/iOS/UnityBuild/Unity-iPhone.xcodeproj")
-#    upload_to_testflight(changelog: "Add rocket emoji Test from Circle ci 1")
 
 
-
-
-   
    PROJECT_APP_ID = "1635039016"
    apple_userid = CredentialsManager::AppfileConfig.try_fetch_value(:apple_id)
     upload_to_testflight(
