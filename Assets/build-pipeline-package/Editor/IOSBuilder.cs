@@ -39,7 +39,6 @@ public class IOSBuilder : MonoBehaviour
             Debug.Log("Build succeeded: " + summary.totalSize + " bytes");
             EditorApplication.Exit(0);
         }
-
         if (summary.result == BuildResult.Failed)
         {
             Debug.Log("Build failed");
