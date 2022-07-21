@@ -28,7 +28,8 @@ platform :ios do
   match(type: "development", readonly: true)
   match(type: "adhoc", readonly: true)
   
-enable_automatic_code_signing(
+update_code_signing_settings(
+  use_automatic_signing: true,
   team_id:"G6J49CK9Y3", 
   path: "Builds/iOS/UnityBuild/Unity-iPhone.xcodeproj"
  )
