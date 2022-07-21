@@ -4,6 +4,8 @@
     <list default="true" id="ea2290f9-f79b-4c18-be3e-40b19d4a8ad8" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TestBuild.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TestBuild.dir/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fastlane/Fastfile" beforeDir="false" afterPath="$PROJECT_DIR$/fastlane/Fastfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fastlane/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/fastlane/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fastlane/report.xml" beforeDir="false" afterPath="$PROJECT_DIR$/fastlane/report.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

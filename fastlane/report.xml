@@ -1,26 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-    <testsuite name="fastlane.lanes">
-
-
-        <testcase classname="fastlane.lanes" name="0: default_platform" time="0.000223">
-
-        </testcase>
-
-
-        <testcase classname="fastlane.lanes" name="1: sync_code_signing" time="6.155798">
-
-        </testcase>
-
-
-        <testcase classname="fastlane.lanes" name="2: build_app" time="64.670496">
-
-        </testcase>
-
-
-        <testcase classname="fastlane.lanes" name="3: upload_to_testflight" time="818.091117">
-
-        </testcase>
-
-    </testsuite>
+  <testsuite name="fastlane.lanes">
+    
+    
+    
+      
+      <testcase classname="fastlane.lanes" name="0: default_platform" time="0.000241">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="1: app_store_connect_api_key" time="0.002789">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="2: match" time="2.774506">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="3: match" time="2.234794">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="4: match" time="2.338448">
+        
+      </testcase>
+    
+  </testsuite>
 </testsuites>
