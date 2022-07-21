@@ -18,21 +18,31 @@ jobs:
           unity-serial-var-name: UNITY_SERIAL
       - unity/build:
           build-target: iOS
-      - save_cache:
-          key: ios-build-workspace
+      - persist_to_workspace:
+          # Must be an absolute path, or relative path from working_directory. This is a directory on the container which is
+          # taken to be the root directory of the workspace.
+          root: Builds
+          # Must be relative path from root
           paths:
-            - Builds/iOS
+            - echo-output
+      # - save_cache:
+      #     key: ios-build-workspace
+      #     paths:
+      #       - Builds/iOS
   test_flight:
     macos:
       xcode: "13.4.1"
     resource_class: medium
     steps:
       - checkout
-      - restore_cache:
-          keys: ios-build-workspace
-      - run:
-          name: move cached build
-          command: mv /root/project/Builds /Users/distiller/project/Builds
+      - attach_workspace:
+        # Must be absolute path or relative path from working_directory
+        at: Builds
+      # - restore_cache:
+      #     keys: ios-build-workspace
+      # - run:
+      #     name: move cached build
+      #     command: mv /root/project/Builds /Users/distiller/project/Builds
       - run:
           name: install fastlane
           command: sudo gem install fastlane
