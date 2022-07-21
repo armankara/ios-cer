@@ -21,10 +21,10 @@ jobs:
       - persist_to_workspace:
           # Must be an absolute path, or relative path from working_directory. This is a directory on the container which is
           # taken to be the root directory of the workspace.
-          root: ~/project/Builds
+          root: Builds
           # Must be relative path from root
           paths:
-            - echo-output
+            - Builds/**/*
       # - save_cache:
       #     key: ios-build-workspace
       #     paths:
