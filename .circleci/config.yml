@@ -21,7 +21,7 @@ jobs:
       - persist_to_workspace:
           # Must be an absolute path, or relative path from working_directory. This is a directory on the container which is
           # taken to be the root directory of the workspace.
-          root: Builds
+          root: projects/Builds
           # Must be relative path from root
           paths:
             - echo-output
@@ -36,7 +36,7 @@ jobs:
     steps:
       - checkout
       - attach_workspace:
-        # Must be absolute path or relative path from working_directory
+          # Must be absolute path or relative path from working_directory
           at: Builds
       # - restore_cache:
       #     keys: ios-build-workspace
@@ -55,4 +55,4 @@ workflows:
     jobs:
       - generate_ios_project
       - test_flight:
-          requires: [generate_ios_project]
+          requires: [ generate_ios_project ]
