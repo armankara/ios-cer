@@ -30,6 +30,7 @@ platform :ios do
   
 update_code_signing_settings(
   use_automatic_signing: true,
+  app_identifier: "com.DefaultCompany.TestBuild1",
   team_id:"G6J49CK9Y3", 
   path: "Builds/iOS/UnityBuild/Unity-iPhone.xcodeproj"
  )
